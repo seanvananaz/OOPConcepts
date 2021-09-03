@@ -1,10 +1,10 @@
 package inheritance;
 
-public class Cellphone2 {
+public class Cellphone2 extends Cellphone {
 
 	String lightType = "RGB";
 
-	public static void rgbOn() {
+	public void rgbOn() {
 		System.out.println("RGB ON!");
 	}
 }

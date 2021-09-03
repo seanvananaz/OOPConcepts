@@ -1,5 +1,6 @@
 package exceptionHandling;
 
+@SuppressWarnings("serial")
 public class InvalidAgeException extends Exception {
 	public InvalidAgeException() {
 		super("\n" + "Invalid Age, you should be 18+ to sign up.");

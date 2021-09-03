@@ -16,6 +16,8 @@ public class Main {
 			System.out.println("Custom Excetion: " + e);
 		} catch(InputMismatchException e) {
 			System.out.println(e);
+		} finally {
+			System.out.println("Finally here!");
 		}
 		
 		scan.close();
@@ -24,7 +26,6 @@ public class Main {
 	
 	static void checkAge(int age) throws InvalidAgeException {
 		if(age < 18) {
-//			throw new InvalidAgeException("\n" + "You must be 18+ to sign up");
 			throw new InvalidAgeException();
 		} else {
 			System.out.println("Sign up successful!");
